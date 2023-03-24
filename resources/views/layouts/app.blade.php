@@ -10,7 +10,7 @@
     <title>{{ config('app.name', 'Laravel') }}</title>
 
     <!-- Scripts -->
-    @vite(['resources/sass/app.scss', 'resources/js/app.js'])
+    <link rel="stylesheet" href="/css/app.css" />
 </head>
 <body>
 
@@ -22,5 +22,6 @@
 
 @include('layouts.footer')
 
+<script src="/js/app.js"></script>
 </body>
 </html>

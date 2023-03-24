@@ -1,5 +1,6 @@
 import { defineConfig } from 'vite';
 import laravel from 'laravel-vite-plugin';
+import createSvgSpritePlugin from 'vite-plugin-svg-sprite';
 import vue from '@vitejs/plugin-vue';
 
 export default defineConfig({
@@ -10,6 +11,10 @@ export default defineConfig({
                 'resources/js/app.js',
             ],
             refresh: true,
+        }),
+        createSvgSpritePlugin({
+            include: 'resources/icons/*.svg',
+            symbolId: 'icon-[name]-[hash]',
         }),
         vue({
             template: {

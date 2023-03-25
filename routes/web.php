@@ -14,5 +14,6 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::get('/competitions', [App\Http\Controllers\СompetitionsController::class, 'index'])->name('competitions');
 
 Auth::routes();

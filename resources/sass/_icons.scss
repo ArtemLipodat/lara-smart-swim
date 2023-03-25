@@ -1,0 +1,5 @@
+.arrow-right{
+    vertical-align: bottom;
+    margin-left: 5px;
+    @include svg('<svg width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M1.33578 0L0 1.33583L4.32839 5.66422L0 9.99261L1.33578 11.3284L7 5.66422L1.33578 0Z" fill="white"/> <path d="M1.33578 0L0 1.33583L4.32839 5.66422L0 9.99261L1.33578 11.3284L7 5.66422L1.33578 0Z" fill="#094979"/> </svg>', 'content');
+}

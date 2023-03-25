@@ -1,0 +1,44 @@
+.footer{
+    padding: 50px 0;
+    background: $darkBlue;
+    .nav{
+        &__list{
+            &__item{
+                color: $white;
+                &:hover{
+                    color: #E67E0F;
+                }
+            }
+        }
+    }
+    .address{
+        width: 60%;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 130%;
+        text-align: right;
+        color: $white;
+        text-decoration: none;
+    }
+    .contacts{
+        display: flex;
+    }
+    .phone{
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+        a{
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 150%;
+            text-align: right;
+            color: $white;
+            text-decoration: none;
+        }
+        .call_me{
+            font-weight: 400;
+            font-size: 12px;
+            text-decoration-line: underline;
+        }
+    }
+}

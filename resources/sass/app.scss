@@ -1,9 +1,203 @@
 // Fonts
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap');
+@import "~svg-sass";
 
 // Variables
 @import 'variables';
+@import "icons";
+@import "buttons";
+@import "slider";
+@import "footer";
 
 // Bootstrap
-@import 'bootstrap/scss/bootstrap';
+@import 'bootstrap/scss/bootstrap-grid.scss';
 
+body{
+    font-family: $font-family-sans-serif;
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.main{
+    min-height: 100vh;
+}
+.page{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    &__title{
+        font-weight: 500;
+        font-size: 48px;
+        line-height: 130%;
+        text-transform: uppercase;
+        color: $blue;
+    }
+}
+.section{
+    margin-bottom: 100px;
+    &__indents{
+        padding: 100px 0;
+    }
+}
+.background{
+    background: $blue;
+}
+.choose_us{
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &__img{
+        img{
+            vertical-align: bottom;
+        }
+    }
+    &__text{
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 23px;
+        text-align: center;
+        color: $white;
+        margin-top: 30px;
+    }
+}
+.faq{
+    margin-top: 60px;
+    padding: 0 100px;
+    .question{
+        margin-bottom: 30px;
+        display: flex;
+        gap: 5px;
+        .img{
+            margin-top: 20px;
+            width: 100px;
+            img{
+                width: 100%;
+            }
+        }
+        .text{
+            width: 70%;
+            background: $white;
+            height: fit-content;
+            padding: 20px 30px;
+            border-radius: 50px 50px 50px 0px;
+            font-weight: 500;
+            font-size: 24px;
+            line-height: 130%;
+            color: $darkBlue;
+        }
+    }
+    .answer{
+        margin-bottom: 30px;
+        display: flex;
+        justify-content: end;
+        gap: 5px;
+        .img{
+            margin-top: 20px;
+            width: 100px;
+            img{
+                width: 100%;
+            }
+        }
+        .text{
+            width: 70%;
+            background: #92CFD8;
+            height: fit-content;
+            padding: 20px 30px;
+            border-radius: 50px 50px 0px 50px;
+            font-weight: 500;
+            font-size: 24px;
+            line-height: 130%;
+            color: $darkBlue;
+        }
+    }
+}
+.articles{
+    margin-top: 60px;
+    display: flex;
+    gap: 35px;
+    .img{
+        width: 50%;
+    }
+    .info{
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        .name{
+            font-weight: 500;
+            font-size: 32px;
+            line-height: 130%;
+            text-transform: uppercase;
+            color: $darkBlue;
+        }
+        .desc{
+            margin-top: 20px;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 130%;
+            color: $darkBlue;
+        }
+    }
+}
+.documents{
+    padding: 0 100px;
+    margin-top: 60px;
+    .button{
+        text-align: center;
+    }
+    .button_big{
+        width: 100%;
+    }
+    &__item{
+        margin-top: 100px;
+        h3{
+            text-align: center;
+        }
+    }
+}
+.competitions{
+    margin-top: 30px;
+    &__item{
+        position: relative;
+        img{
+            width: 100%;
+        }
+        .info{
+            width: 100%;
+            position: absolute;
+            right: 0;
+            left: 0;
+            top: 30%;
+            bottom: 0;
+            .name{
+                font-weight: 500;
+                font-size: 36px;
+                line-height: 130%;
+                text-align: center;
+                color: $white;
+            }
+            .desc{
+                margin-top: 10px;
+                font-weight: 400;
+                font-size: 20px;
+                line-height: 130%;
+                text-align: center;
+                color: $white;
+            }
+            .actions{
+                margin-top: 30px;
+                display: flex;
+                justify-content: center;
+                width: 100%;
+                a{
+                    width: 40%;
+                }
+            }
+        }
+    }
+}
+
+@import "nav";
+@import "~owl.carousel";
+@import "helpers";

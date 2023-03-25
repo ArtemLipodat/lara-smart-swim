@@ -1,0 +1,45 @@
+.button{
+    width: max-content;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    border-radius: 100px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 150%;
+    text-decoration: none;
+    transition: all 0.5s ease;
+    &__blue{
+        color: $white;
+        background: $blue;
+        transition: all 0.5s ease;
+        &:hover{
+            transition: all 0.5s ease;
+            background: #E67E0F
+        }
+    }
+    &__white{
+        background: $white;
+        color: $darkBlue;
+    }
+    &__white__transparent{
+        color: $white;
+        background: none;
+        border: 3px solid $white;
+        &:hover{
+            border: 3px solid #E67E0F;
+            color: #E67E0F;
+        }
+    }
+    &__transparent{
+        background: none;
+        border: 3px solid $blue;
+        color: $blue;
+        &:hover{
+            border: 3px solid #E67E0F;
+            color: #E67E0F;
+        }
+    }
+}

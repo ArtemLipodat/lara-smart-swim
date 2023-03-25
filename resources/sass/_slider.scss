@@ -1,0 +1,57 @@
+.slide{
+    position: relative;
+    &__info{
+        max-width: 60%;
+        position: absolute;
+        background: rgba(9, 73, 121, 0.5);
+        padding: 60px;
+        top: 20%;
+    }
+    &__title{
+        font-weight: 500;
+        font-size: 46px;
+        line-height: 130%;
+        color: $white;
+    }
+    &__text{
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 130%;
+        color: $white;
+    }
+    &__buttons{
+        width: 100%;
+        position: absolute;
+        top: 70%;
+        left: 3%;
+        display: flex;
+        gap: 50px;
+        .button{
+            width: 220px;
+        }
+    }
+}
+.testimonials{
+    margin-top: 60px;
+    padding: 50px 100px;
+    border: 3px solid $blue;
+    &__person{
+        display: flex;
+        gap: 40px;
+        align-items: center;
+        .name{
+            font-weight: 500;
+            font-size: 32px;
+            line-height: 130%;
+            color: $blue;
+            width: 50%;
+        }
+    }
+    &__text{
+        margin-top: 30px;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 130%;
+        color: $blue;
+    }
+}
